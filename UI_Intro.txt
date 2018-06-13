@@ -1,0 +1,50 @@
+UI - User Interface
+
+HTML 4
+Hypertext Markup Language
+Struture/Skeleton
+Static
+Nexus
+
+Netscape
+
+CSS  -  Cascading Stylesheet
+Design
+
+
+Javascript - Dynamic Web Pages
+DOM - Document Object Model
+AJAX - Asynchronous Javascript and XML
+JSON - Javascript Object Notation
+
+Jquery - Lightweight Javascript Library
+Easy DOM
+Easy AJAX
+Animations
+
+
+HTML 5 - Dynamic
+Without JS
+Form Validations
+Multimedia
+
+Localstorage
+Offline Webpages
+Geolocation
+Drag and Drop
+Speech/Camera
+Canvas/SVG
+
+CSS 3
+Flexbox
+Media Queries  -Responsive web development
+2D + 3D Animations
+
+Bootstrap - Responsive web framework
+
+Vscode
+
+
+
+
+

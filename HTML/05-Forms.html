@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Forms</h1>
+
+    <!-- methods - get and post -->
+    <form action="login.html" method="GET">
+        <table>
+            <tr>
+                <td><label for="u_name">Enter Name</label></td>
+                <td>
+                    <input type="text" name="username" id="u_name">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="u_pwd">Enter Password</label></td>
+                <td>
+                    <input type="password" name="userpwd" id="u_pwd">
+                </td>
+            </tr>
+            <tr>
+                <td>Select Country</td>
+                <td>
+                    <select name="country" id="">
+                        <option>Choose Country</option>
+                        <option value="ind">India</option>
+                        <option value="aus">Aus</option>
+                        <option value="us">US</option>
+                        <option value="uk">UK</option>
+                        <option value="ch">China</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Login">
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
