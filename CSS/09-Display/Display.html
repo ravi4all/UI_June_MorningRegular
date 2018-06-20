@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        h2 {
+            display: inline;
+        }
+        ul {
+            margin: 0px;
+            padding: 0px;
+        }
+        li {
+            display: inline-block;
+            /* padding: 10px; */
+            background-color: lightblue;
+            width: 15%;
+            text-align: center;
+            position: relative;
+        }
+        li a {
+            display: block;
+            color: red;
+            text-decoration: none;
+            padding: 10px 0px;
+        }
+        li a:hover {
+            background-color: lightcoral;
+            color: #fff;
+        }
+        .dropdown {
+            position: absolute;
+            width: 100%;
+            display: none;
+        }
+        .dropdown li {
+            display: block;
+            width: 100%;
+        }
+        ul li:hover .dropdown {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Display Property</h1>
+
+    <h2>This is a heading</h2>
+    <h2>This is a heading</h2>
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li>
+            <a href="#">Electronics</a>
+            <div class="dropdown">
+                <ul>
+                    <li><a href="#">Mobile</a></li>
+                    <li><a href="#">TV</a></li>
+                    <li><a href="#">AC</a></li>
+                    <li><a href="#">Projector</a></li>
+                    <li><a href="#">Fan</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="#">Sports</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+    </ul>
+    
+</body>
+</html>
