@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+            position: relative;
+        }
+        h1:after,h1:before {
+            content: "";
+            width: 40%;
+            border: 2px solid red;
+            position: absolute;
+            top: 20px;
+        }
+        h1::before {
+            left: 0px;
+        }
+        h1::after {
+            right: 0px;
+        }
+        div {
+            border: 2px solid red;
+            width: 300px;
+            padding: 20px;
+            margin: 0 auto;
+            position: relative;
+        }
+        p:before {
+            content: ">>";
+        }
+        p:after {
+            content: "Read More";
+            font-size: 20px;
+            color: red;
+            cursor: pointer;
+        }
+        div:after {
+            content: "";
+            position: absolute;
+            border: 50px solid;
+            border-color: red transparent transparent;
+            top: 0px;
+            right: -200px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Pseudo Elements</h1>
+
+    <div>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi eos id eius accusantium magni nihil earum et pariatur non eaque similique, illo labore, est nostrum laudantium amet quidem! Aperiam, porro? Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nisi libero fugit cum amet quod ducimus, nulla est, veniam eaque adipisci, repellendus dignissimos et consectetur quae. Eum veritatis cum possimus!
+        </p>
+    </div>
+    
+</body>
+</html>
