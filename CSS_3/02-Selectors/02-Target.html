@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #form {
+            display: none;
+        }
+        #form:target {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Target Selector</h1>
+
+    <a href="#form">Login/SignUp</a>
+
+    <div id="form">
+        <a href="#">Close</a>
+        <form action="#">
+            <table width='50%' border="1" cellpadding=10>
+                <tr>
+                    <td>Enter Email ID</td>
+                    <td>
+                        <input type="email" placeholder="Enter email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Enter Password</td>
+                    <td>
+                        <input type="password" placeholder="Enter Password">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    
+</body>
+</html>
