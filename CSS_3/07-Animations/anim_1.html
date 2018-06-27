@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            overflow: hidden;   
+        }
+        img {
+            position: absolute;
+        }
+        .img_1 {
+            width: 30%;
+            animation: anim_1 8s;
+        }
+        @keyframes anim_1 {
+            0% {
+                left: 0%;
+            }
+            50% {
+                left: 100%;
+                transform: rotateY(0deg);
+            }
+            100% {
+                left: -100%;
+                transform: rotateY(-360deg);
+            }
+        }
+        .img_2 {
+            width: 40%;
+            right: -100%;
+            animation: anim_2 4s;
+            animation-delay: 3.5s;
+        }
+        @keyframes anim_2 {
+            0% {
+                right: -100%;
+            }
+            100% {
+                right: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="div_1">
+        <img src="../../images/hulk5-18463.gif" alt="" class="img_1">
+        <img src="../../images/NewImages/NiiP10g.png" alt="" class="img_2">
+    </div>
+    
+</body>
+</html>

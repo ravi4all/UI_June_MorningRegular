@@ -1,0 +1,56 @@
+div {
+    position: absolute;
+    bottom: 0px;
+    background-color: red;
+    height: 100px;
+    width: 70px;
+    animation: waves 1s infinite;
+}
+
+@keyframes waves {
+    0% {
+        height: 100px;
+    }
+    50% {
+        height: 500px;
+    }
+    100% {
+        height: 100px;
+    }
+}
+
+#div_1 {
+    animation-timing-function: ease;
+}
+#div_2 {
+    left: 8%;
+    animation-timing-function: ease-in;
+}
+#div_3 {
+    left: 16%;
+    animation-timing-function: ease-in-out;
+}
+#div_4 {
+    left: 24%;
+    animation-timing-function: ease-out;
+}
+#div_5 {
+    left: 32%;
+    animation-timing-function: linear;
+}
+#div_6 {
+    left: 40%;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#div_7 {
+    left: 48%;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+#div_8 {
+    left: 56%;
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+#div_9 {
+    left: 64%;
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+}
