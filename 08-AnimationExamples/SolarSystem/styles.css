@@ -1,0 +1,57 @@
+body {
+    margin: 0px;
+    overflow: hidden;
+}
+
+#container {
+    position: relative;
+    height: 600px;
+    z-index: -2;
+    background-size: 100% 100%;
+    background-image: url("https://images.unsplash.com/photo-1487925876428-ebd8a23ee1d4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a4854952e1d18e80245ff80ed1889532&w=1000&q=80");
+    animation: background 20s infinite linear;
+}
+@keyframes background {
+    0% {
+        transform: scale(2,2);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+#sun {
+    height: 200px;
+    width: 200px;
+    background-image: url("https://vignette.wikia.nocookie.net/thesolarsystem6361/images/5/59/Sun_spacepedia.png/revision/latest?cb=20180301152819");
+    background-size: 100% 100%;
+    position: absolute;
+    left: 40%;
+    top: 30%;
+}
+
+#earth {
+    background-image: url("../../../images/00-22.gif");
+    height: 150px; 
+    width: 150px;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    animation: earth 10s infinite linear;
+}
+
+@keyframes earth {
+    0% {
+        transform: translate(0px, 0px) scale(1,1);
+    }
+    50% {
+        transform: translate(800px,0px) scale(0.5,0.5);
+    }
+    81% {
+        z-index: -1;
+    }
+    100% {
+        transform: translate(0px, 0px);
+        z-index: -1;
+    }
+}
