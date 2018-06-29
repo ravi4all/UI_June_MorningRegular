@@ -1,0 +1,23 @@
+#parent {
+    /* column-count: 3; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    background-color: lightgray;
+    border: 2px solid red;
+    margin: 0px 10px 20px;
+}
+
+.col-1 {
+    width: 20%;
+}
+
+.col-2 {
+    width: 50%;
+}
+
+.col-3 {
+    width: 20%;
+}
