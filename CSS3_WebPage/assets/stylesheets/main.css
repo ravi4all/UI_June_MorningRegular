@@ -133,3 +133,140 @@ h1,h2,h3,h4,h5,h6 {
 #banner .desc span {
     margin-left: 10%;
 }
+
+/* Video */
+#video {
+    position: relative;
+}
+#video video {
+    width: 100%;
+}
+#video .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background-color: rgba(0,0,0,0.5);
+}
+#video .desc {
+    position: absolute;
+    bottom: 80px;
+    width: 100%;
+    left: 5%;
+    z-index: 100;
+}
+#video .desc h2 {
+    font-size: 56px;
+    line-height: 90px;
+    font-weight: normal;
+    color: #fff;
+}
+#video .desc h2 i {
+    color: #35e034;
+}
+#video .desc span {
+    margin-left: 10%;
+}
+
+/* Section_1 */
+#section_1 {
+    padding: 80px 0px;
+}
+#section_1 .col {
+    text-align: center;
+}
+#section_1 .num {
+    border: 2px solid #000;
+    width: 34%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 35px;
+    margin: 0 auto 30px;
+    position: relative;
+}
+#section_1 .num span {
+    font-size: 30px;
+    color: #f5232e;
+}
+#section_1 .image {
+    height: 315px;
+    overflow: hidden;
+}
+#section_1 .image img {
+    width: 100%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#section_1 .wrapper {
+    position: relative;
+}
+#section_1 .wrapper:after, #section_1 .wrapper:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    border: 1px solid #000;
+    width: 33%;
+}
+#section_1 .wrapper:before {
+    left: 0px;
+}
+#section_1 .wrapper:after {
+    right: 0px;
+}
+
+#section_1 .image:hover img {
+    transform: translate(0%, -10%);
+}
+
+
+/* Gallery */
+#gallery {
+    background-color: #4C6E90;
+    padding: 40px 0px;
+}
+#gallery .row {
+    justify-content: space-between;
+}
+#gallery figure {
+    margin: 0px 0px 10px;
+}
+#gallery img {
+    width: 100%;
+}
+#gallery .col {
+    margin: 0px 10px;
+}
+#gallery h2 {
+    color: #fff;
+    font-size: 30px;
+}
+#gallery .m-left {
+    margin-left: 13px;
+}
+#gallery .image {
+    position: relative;
+    overflow: hidden;
+}
+#gallery .caption {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    left: 0px;
+    top: 0px;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    transform: translate(0%, 100%);
+    transition: 0.5s;
+}
+#gallery .image:hover .caption {
+    transform: translate(0%,0%);
+}
+#gallery .caption span {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    left: 0px;
+}
