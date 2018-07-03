@@ -24,6 +24,8 @@ ul li {
     background: transparent;
     border: none;
     display: none;
+    pointer-events: none;
+    z-index: 100;
 }
 .menu-btn .line {
     display: block;
@@ -31,14 +33,66 @@ ul li {
     height: 3px;
     margin-bottom: 4px;
     background-color: lightcoral;
+    transition: 1s;
 }
 
-@media(max-width: 768px){
+input[value="toggle-menu"] {
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    height: 16px;
+    width: 30px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 100;
+}
+
+@media(min-width: 768px){
+    .menu-btn {
+        display: none;
+    }
+}
+
+@media(max-width: 767px){
     .menu-btn {
         display: block;
     }
     #main-nav ul {
-        display: none;
+        /* display: none; */
+        position: absolute;
+        display: block;
+        right: 0px;
+        top: 0px;
+        text-align: center;
+        width: 30%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+        /* transform: translate(0%,-150%); */
+        transform: translate(100%,0%);
+        transition: 1s;
+    }
+    ul li {
+        padding: 10px;
+        margin: 0px;
+    }
+    ul li a {
+        color: #fff;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    #main-nav input[value='toggle-menu']:checked ~ ul {
+        transform: translate(0%,0%);
+    }
+    #main-nav input[value='toggle-menu']:checked ~ .menu-btn .line:nth-child(2) {
+        opacity: 0;
+    }
+    #main-nav input[value='toggle-menu']:checked ~ .menu-btn .line:first-child {
+        transform: rotate(45deg);
+        margin-top: 6px;
+    }
+    #main-nav input[value='toggle-menu']:checked ~ .menu-btn .line:last-child {
+        transform: rotate(-45deg);
+        margin-top: -15px;
     }
 }
 
