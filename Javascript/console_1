@@ -1,0 +1,76 @@
+a = 10
+10
+b = 12
+12
+a + b
+22
+a - b
+-2
+a/b
+0.8333333333333334
+a*b
+120
+typeof(a)
+"number"
+c = 10.5
+10.5
+typeof(c)
+"number"
+e = 'hello'
+"hello"
+typeof(e)
+"string"
+a = '10'
+"10"
+typeof(a)
+"string"
+a + b
+"1012"
+a+b+c
+"101210.5"
+a-b
+-2
+a/b
+0.8333333333333334
+a*b
+120
+b+c+a
+"22.510"
+d = 10
+10
+a
+"10"
+a == d
+true
+a === d
+false
+arr = [12,34,5,2,6,8,1]
+(7) [12, 34, 5, 2, 6, 8, 1]0: 121: 342: 53: 24: 65: 86: 1length: 7__proto__: Array(0)concat: ƒ concat()constructor: ƒ Array()copyWithin: ƒ copyWithin()entries: ƒ entries()every: ƒ every()fill: ƒ fill()filter: ƒ filter()find: ƒ find()findIndex: ƒ findIndex()forEach: ƒ forEach()includes: ƒ includes()indexOf: ƒ indexOf()join: ƒ join()keys: ƒ keys()lastIndexOf: ƒ lastIndexOf()length: 0map: ƒ map()pop: ƒ pop()push: ƒ push()reduce: ƒ reduce()reduceRight: ƒ reduceRight()reverse: ƒ reverse()shift: ƒ shift()slice: ƒ slice()some: ƒ some()sort: ƒ sort()splice: ƒ splice()toLocaleString: ƒ toLocaleString()toString: ƒ toString()unshift: ƒ unshift()values: ƒ values()Symbol(Symbol.iterator): ƒ values()Symbol(Symbol.unscopables): {copyWithin: true, entries: true, fill: true, find: true, findIndex: true, …}__proto__: Object
+a
+"10"
+typeof(arr)
+"object"
+arr instanceof Array
+true
+Array instanceof Object
+true
+typeof(Object)
+"function"
+typeof(Array)
+"function"
+typeof(a)
+"string"
+a instanceof String
+false
+s = new String("10")
+String {"10"}
+r = "10"
+"10"
+typeof(s)
+"object"
+s instanceof String
+true
+r instanceof String
+false
+s instanceof Object
+true
