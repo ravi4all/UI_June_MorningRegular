@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="calc_3.js"></script>
+    <style>
+        .btn {
+            background-color: lightgray;
+            border: 1px solid lightgray;
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            text-align: center;
+            margin: 0px 6px;
+            padding: 5px;
+            cursor: pointer;
+        }
+        input[type='text'] {
+            height: 40px;
+            width: 300px;
+            margin-bottom: 10px;
+        }
+        .calcButtons {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Calculator</h1>
+
+<span id="toCalculate"></span>
+<br><br>
+<input type="text" placeholder="0" readonly id="box_1">
+<div id="calc">
+
+</div>
+<div class="calcButtons">
+        <button class="opr btn">+</button>
+        <button class="opr btn">-</button>
+        <button class="opr btn">/</button>
+        <button class="opr btn">*</button>
+        <button class="btn" id="calculate">=</button>
+</div>
+    
+</body>
+</html>

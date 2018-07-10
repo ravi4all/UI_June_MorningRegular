@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Key Press Events</h1>
+
+    <!-- KeyPress
+    KeyDown
+    KeyUp -->
+
+    <!-- <input type="text" placeholder="Enter Name" onkeypress="show(this)"> -->
+
+    <!-- <input type="text" placeholder="Enter Name" onkeydown="show(this)"> -->
+
+    <input type="text" placeholder="Enter Name" onkeyup="show(this)">
+    <span id="output"></span>
+
+
+    <script>
+        function show(obj){
+            var value = obj.value;
+            var key = event.keyCode;
+            document.getElementById("output").innerHTML = key;
+            // alert("Key Pressed...");
+        }
+    </script>
+</body>
+</html>
