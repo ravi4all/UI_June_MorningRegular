@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #image {
+            height: 500px;
+            background-image: url("../../images/WebImages/awesome-wallpapers-6482-6759-hd-wallpapers.jpg");
+        }
+    </style>
+</head>
+<body>
+
+    <h1>MouseMove Animation</h1>
+
+    <div id="image" onmousemove="animation(this)">
+
+    </div>
+    
+    <script>
+        function animation(obj){
+            var x = event.clientX;
+            var y = event.clientY;
+            // console.log(x,y);
+            obj.style.backgroundPositionX = -x*0.5+'px';
+            obj.style.backgroundPositionY = -y*0.5+'px';
+        }
+    </script>
+</body>
+</html>
