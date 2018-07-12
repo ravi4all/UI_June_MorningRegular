@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Mouse Events</h1>
+
+    <div onmouseover="changeImage(this)" onmouseout="changeImage2(this)">
+        <img src="../../images/hulk5-18463.gif" alt="">
+    </div>
+
+    <script>
+        function changeImage(obj){
+            obj.innerHTML = '<img src="../../images/hulksmash2.gif" alt="">';
+        }
+        function changeImage2(obj){
+            obj.innerHTML = '<img src="../../images/hulk5-18463.gif" alt="">';
+        }
+    </script>
+    
+</body>
+</html>
