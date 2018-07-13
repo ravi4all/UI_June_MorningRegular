@@ -5,24 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/stylesheets/styles.css">
+    <script src="assets/javascripts/songs.js"></script>
+    <script src="assets/javascripts/script.js"></script>
 </head>
 <body>
 
+    <div class="container">
     <h1>Music App</h1>
 
     <div class="audioPlayer">
         <audio id="audio" controls>
             <source src="">
         </audio>
+        <button id="play" class="btn btn-primary">Play</button>
+        <button id="pause" class="btn btn-secondary">Pause</button>
+        <div class="sliderWrapper">
+            <input type="range" value="0" id="slider">
+            <span id="songCovered"></span>
+        </div>
     </div>
 
     <div id="songs">
-        <ul>
+        <ul id="songsList" class="list-group">
             
         </ul>
     </div>
 
-
+</div>
     
 </body>
 </html>
