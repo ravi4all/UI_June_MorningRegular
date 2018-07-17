@@ -1,18 +1,31 @@
+#songsList .btn, #playList .btn {
+  position: absolute;
+  right: 60px;
+  top: 3px;
+}
 li {
     padding-left: 70px !important;
     position: relative;
+    overflow: hidden;
 }
 
 li:hover {
     background-color: lightgray;
-    cursor: pointer;
+}
+li span:hover {
+  cursor: pointer;
 }
 
-li img {
+li .play_icon, li .cover {
     position: absolute;
-    width: 3%;
+    width: 8%;
     left: 2%;
-    top: 8px;
+    top: 3px;
+}
+
+#coverImage {
+  width: 100px;
+  height: 100px;
 }
 
 #audio {
