@@ -1,0 +1,82 @@
+#songsList .btn, #playList .btn {
+  position: absolute;
+  right: 60px;
+  top: 3px;
+}
+li {
+    padding-left: 70px !important;
+    position: relative;
+    overflow: hidden;
+}
+
+li:hover {
+    background-color: lightgray;
+}
+li span:hover {
+  cursor: pointer;
+}
+
+li .play_icon, li .cover {
+    position: absolute;
+    width: 8%;
+    left: 2%;
+    top: 3px;
+}
+
+#coverImage {
+  width: 100px;
+  height: 100px;
+}
+
+#audio {
+    width: 100%;
+    position: absolute;
+    display: none;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    margin: 18px 0;
+    width: 100%;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    background: #3071a9;
+    border-radius: 1.3px;
+    border: 0.2px solid #010101;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -10px;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #367ebd;
+  }
+
+  .sliderWrapper {
+      display: inline-block;
+      width: 100%;
+      position: relative;
+  }
+  .sliderWrapper span {
+    background-color: red;
+    width: 0px;
+    display: block;
+    left: 0px;
+    position: absolute;
+    height: 9px;
+    top: 18px;
+  }
