@@ -1,0 +1,136 @@
+/* @media(max-width:1200px){
+    body {
+        background-color: lightcoral;
+    }
+} */
+body {
+    overflow: hidden;
+}
+#header {
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-between;
+}
+ul {
+    display: flex;
+    list-style: none;
+}
+ul li {
+    margin: 0px 20px;
+}
+
+.menu-btn {
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    display: none;
+    z-index: 100;
+    cursor: pointer;
+}
+.menu-btn .line {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin-bottom: 4px;
+    background-color: lightcoral;
+    transition: 1s;
+}
+
+@media(min-width: 768px){
+    .menu-btn {
+        display: none;
+    }
+}
+
+@media(max-width: 767px){
+    .menu-btn {
+        display: block;
+    }
+    #main-nav ul {
+        /* display: none; */
+        position: absolute;
+        display: block;
+        right: 0px;
+        top: 0px;
+        text-align: center;
+        width: 30%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+        /* transform: translate(0%,-150%); */
+        transform: translate(100%,0%);
+        transition: 1s;
+    }
+    ul li {
+        padding: 10px;
+        margin: 0px;
+    }
+    ul li a {
+        color: #fff;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    #main-nav.active ul {
+        transform: translate(0%,0%);
+    }
+    #main-nav.active .menu-btn .line:nth-child(2) {
+        opacity: 0;
+    }
+    #main-nav.active .menu-btn .line:first-child {
+        transform: rotate(45deg);
+        margin-top: 6px;
+    }
+    #main-nav.active .menu-btn .line:last-child {
+        transform: rotate(-45deg);
+        margin-top: -15px;
+    }
+}
+
+#parent {
+    /* column-count: 3; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    justify-content: center;
+    /* justify-content: flex-end; */
+    align-items: flex-start;
+    /* align-items: stretch; */
+    /* align-items: flex-end; */
+    /* align-items: center; */
+    /* flex-direction: column-reverse; */
+}
+
+.column {
+    background-color: lightgray;
+    border: 2px solid red;
+    margin: 0px 10px 20px;
+}
+
+.col-1 {
+    width: 17%;
+    align-self: center;
+}
+
+.col-2 {
+    width: 40%;
+}
+img {
+    width: 100%;
+}
+
+.col-3 {
+    width: 17%;
+    align-self: flex-end;
+}
+
+@media(max-width:768px){
+    #parent {
+        display: block;
+    }
+    .column {
+        width: 100%;
+        margin: 10px 0px;
+    }
+}

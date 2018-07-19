@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>DOM Traversing</h1>
+
+    <div id="parent_1">
+        <h2>This heading is inside parent_1</h2>
+        <div class="child">
+            <h2>This heading is inside child</h2>
+            <div class="grandchild">
+                <h2>This is inside grandchild</h2>
+                <img src="../images/hulk5-18463.gif" alt="">
+                <br><br>
+                <button>Click Here</button>
+                <br><br>
+                <img src="../images/00-22.gif" alt="">
+            </div>
+        </div>
+        <div class="child">
+            <h2>This heading is inside child</h2>
+            <div class="grandchild">
+                <h2>This is inside grandchild</h2>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="parent_2">
+        <h2>This heading is inside parent_2</h2>
+        <div class="child">
+            <h2>This heading is inside child</h2>
+            <div class="grandchild">
+                <h2>This is inside grandchild</h2>
+                <img src="../images/hulk5-18463.gif" alt="">
+                <br><br>
+                <button>Click Here</button>
+                <br><br>
+                <img src="../images/00-22.gif" alt="">
+            </div>
+        </div>
+        <div class="child">
+            <h2>This heading is inside child</h2>
+            <div class="grandchild">
+                <h2>This is inside grandchild</h2>
+            </div>
+        </div>
+    </div>
+    
+    <script src="jquery-3.3.1.min.js"></script>
+    <!-- <script src="dom_traverse.js"></script> -->
+    <script>
+        $("button").click(function(){
+            // $(this).siblings("img").hide(1000);
+            // $(this).parent().hide(1000);
+            // $(this).parents().hide(1000);
+            // $(this).parentsUntil("#parent_1").hide(1000);
+            $(this).parents("#parent_1").siblings("#parent_2").find("img").hide(1000);
+        });
+    </script>
+</body>
+</html>
